@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =====================================================
+       InAmigos Foundation — Awareness Website
+       =====================================================
+       A single-page responsive awareness website built to 
+       showcase the mission, projects, and social impact of 
+       the InAmigos Foundation.
+
+       Technology: HTML5 + CSS3 only. No frameworks.
+       Source of Truth: README.md, DESIGN_SYSTEM.md, CONTENT_SPEC.md
+       ===================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>InAmigos Foundation — Together We Can Build a Better Tomorrow</title>
+    <meta name="description"
+        content="InAmigos Foundation is a Section 8 registered non-profit organization dedicated to creating meaningful social impact through education, women empowerment, environmental sustainability, youth development, community welfare, and animal care.">
+    <meta name="keywords"
+        content="InAmigos Foundation, NGO, non-profit, education, women empowerment, environment, animal welfare, volunteer, India">
+
+    <!-- Favicon — Official InAmigos icon -->
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+
+    <!-- Google Fonts — Poppins (headings) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome — Outline icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+       SKIP LINK — Accessibility: Skip to main content
+       ===================================================== -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+    <!-- =====================================================
+       COMPONENT: Navigation
+       =====================================================
+       Sticky navbar. Logo left, links right.
+       CSS-only hamburger menu on mobile.
+       Menu items from CONTENT_SPEC: Home, About, Projects, 
+       Impact, Gallery, Volunteer, Contact
+       ===================================================== -->
+    <header class="nav" role="banner">
+        <div class="container nav__inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="nav__logo" aria-label="InAmigos Foundation — Go to homepage">
+                <img src="images/logo.jpg" alt="InAmigos Foundation official logo" class="nav__logo-img" width="48"
+                    height="48">
+                <div class="nav__logo-text">
+                    InAmigos
+                    <span>Foundation</span>
+                </div>
+            </a>
+
+            <!-- Mobile hamburger toggle (CSS-only, no JavaScript) -->
+            <input type="checkbox" id="nav-toggle" class="nav__toggle sr-only" aria-label="Toggle navigation menu">
+
+            <!-- Navigation Links -->
+            <nav class="nav__links" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="nav__link">Home</a>
+                <a href="index.html#about" class="nav__link">About</a>
+                <a href="index.html#projects" class="nav__link">Projects</a>
+                <a href="index.html#impact" class="nav__link">Impact</a>
+                <a href="index.html#gallery" class="nav__link">Gallery</a>
+                <a href="index.html#volunteer" class="nav__link">Volunteer</a>
+                <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+            </nav>
+            <!-- Hamburger icon label (only visible on mobile) -->
+            <label for="nav-toggle" class="nav__toggle-label" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Mobile overlay (closes menu when clicking outside) -->
+            <label for="nav-toggle" class="nav__overlay" aria-hidden="true"></label>
+
+        </div>
+    </header>
+
+
+    <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+    <main id="main-content">
+
+        <!-- Contact Hero -->
+        <section class="contact-hero section section--green">
+            <div class="container hero__content text-center">
+                <p class="section-label section-label--inverse">Contact Us</p>
+                <h1 class="hero__heading">We'd Love to Hear From You</h1>
+                <p class="hero__subheading">
+                    Have questions about volunteering, partnerships, donations, or internships?<br>
+                    Get in touch with the InAmigos Foundation team and we'll be happy to help.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Information + Form -->
+        <section class="section section--ivory">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Left Column: Contact Cards -->
+                    <div class="contact-info-wrapper">
+                        <p class="section-label">Get In Touch</p>
+                        <h2 class="section-heading">Contact Information</h2>
+                        
+                        <div class="info-card-group">
+                            <!-- Card 1: Address -->
+                            <article class="card info-card">
+                                <div class="info-card__icon">
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h3 class="info-card__title">Address</h3>
+                                    <p class="info-card__text">
+                                        Ward No. 5, Gram Post Sipat<br>
+                                        Ujwal Nagar, Bilaspur<br>
+                                        Chhattisgarh – 495555
+                                    </p>
+                                </div>
+                            </article>
+
+                            <!-- Card 2: Email -->
+                            <article class="card info-card">
+                                <div class="info-card__icon">
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h3 class="info-card__title">Email</h3>
+                                    <p class="info-card__text">
+                                        <a href="mailto:support@inamigosfoundation.org.in">support@inamigosfoundation.org.in</a>
+                                    </p>
+                                </div>
+                            </article>
+
+                            <!-- Card 3: Phone -->
+                            <article class="card info-card">
+                                <div class="info-card__icon">
+                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h3 class="info-card__title">Phone</h3>
+                                    <p class="info-card__text">
+                                        <a href="tel:+916267309902">+91 6267309902</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <div class="contact-form-wrapper">
+                        <div class="card contact-form">
+                            <h2 class="section-heading">Send Us a Message</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="fullName" class="form-label sr-only">Full Name</label>
+                                    <input type="text" id="fullName" class="form-input" placeholder="Full Name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="emailAddr" class="form-label sr-only">Email Address</label>
+                                    <input type="email" id="emailAddr" class="form-input" placeholder="Email Address" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subjectLine" class="form-label sr-only">Subject</label>
+                                    <input type="text" id="subjectLine" class="form-input" placeholder="Subject">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="messageText" class="form-label sr-only">Your Message</label>
+                                    <textarea id="messageText" class="form-input form-textarea" placeholder="Your Message" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn--primary form-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section">
+            <div class="container text-center">
+                <p class="section-label">Location</p>
+                <h2 class="section-heading">Find Us</h2>
+                <div class="card map-card">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.536340248555!2d82.259929275035!3d22.105417879828456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280cdb90a6f8eb%3A0xc3b86861cb793282!2sBilaspur%2C%20Chhattisgarh%2C%20India!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus" 
+                        class="map-iframe" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade" 
+                        title="InAmigos Foundation Map Location">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="section section--green cta">
+            <div class="container">
+                <div class="cta__content animate-fade-up">
+                    <p class="section-label section-label--inverse">Get Involved</p>
+                    <h2 class="cta__heading">Ready to Make a Difference?</h2>
+                    <div class="btn-group btn-group--center mt-lg">
+                        <a href="https://forms.gle/AB4c1hLaDDmtrKGU7" class="btn btn--white" target="_blank" rel="noopener noreferrer">
+                            Become a Volunteer
+                        </a>
+                        <a href="https://rzp.io/l/kWQ87HP" class="btn btn--accent" target="_blank" rel="noopener noreferrer">
+                            Donate Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="contact" class="footer" role="contentinfo">
+        <div class="container">
+
+            <!-- Footer Grid — 4 columns -->
+            <div class="footer__grid">
+
+                <!-- Column 1: Logo & Organization Info -->
+                <div>
+                    <div class="footer__logo">
+                        <img src="images/logo-footer.jpg" alt="InAmigos Foundation logo" class="footer__logo-img"
+                            width="48" height="48">
+                        <div class="footer__logo-name">
+                            InAmigos
+                            <span>Foundation</span>
+                        </div>
+                    </div>
+                    <p class="footer__text">
+                        A Section 8 registered non-profit organization dedicated to creating meaningful social impact
+                        through education, women empowerment, environmental sustainability, youth development, community
+                        welfare, and animal care.
+                    </p>
+
+                    <!-- Social Media Icons -->
+                    <div class="social-icons" aria-label="Follow us on social media">
+                        <!-- Instagram — official account -->
+                        <a href="https://www.instagram.com/inamigos/" class="social-icon" target="_blank"
+                            rel="noopener noreferrer" aria-label="Follow InAmigos Foundation on Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <!-- Facebook — official account -->
+                        <a href="https://www.facebook.com/inamigos.inamigos" class="social-icon" target="_blank"
+                            rel="noopener noreferrer" aria-label="Follow InAmigos Foundation on Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <!-- LinkedIn — TODO: Verify official LinkedIn URL from InAmigos Foundation -->
+                        <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer"
+                            aria-label="Follow InAmigos Foundation on LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <!-- YouTube — TODO: Verify official YouTube URL from InAmigos Foundation -->
+                        <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer"
+                            aria-label="Follow InAmigos Foundation on YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Navigation Links -->
+                <nav aria-label="Footer navigation">
+                    <h3 class="footer__heading">Quick Links</h3>
+                    <div class="footer__links">
+                        <a href="index.html" class="footer__link">Home</a>
+                        <a href="index.html#about" class="footer__link">About</a>
+                        <a href="index.html#projects" class="footer__link">Projects</a>
+                        <a href="index.html#impact" class="footer__link">Impact</a>
+                        <a href="index.html#gallery" class="footer__link">Gallery</a>
+                        <a href="index.html#volunteer" class="footer__link">Volunteer</a>
+                        <a href="contact.html" class="footer__link">Contact</a>
+                    </div>
+                </nav>
+
+                <!-- Column 3: Contact Information — from CONTENT_SPEC -->
+                <div>
+                    <h3 class="footer__heading">Contact Us</h3>
+                    <div class="footer__contact-item">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:support@inamigosfoundation.org.in">support@inamigosfoundation.org.in</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:inamigosfoundation@gmail.com">inamigosfoundation@gmail.com</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+916267309902">+91 6267309902</a>
+                    </div>
+                </div>
+
+                <!-- Column 4: Address — from CONTENT_SPEC -->
+                <div>
+                    <h3 class="footer__heading">Our Address</h3>
+                    <address class="footer__contact-item" style="font-style: normal;">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>
+                            Ward No. 5, Gram Post Sipat,<br>
+                            Ujwal Nagar, Bilaspur,<br>
+                            Chhattisgarh — 495555,<br>
+                            India
+                        </span>
+                    </address>
+                </div>
+
+            </div><!-- /footer__grid -->
+
+            <!-- Copyright — from CONTENT_SPEC -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2026 InAmigos Foundation. Awareness webpage created for internship purposes.
+                </p>
+            </div>
+
+        </div><!-- /container -->
+    </footer>
+
+</body>
+
+</html>

@@ -36,89 +36,120 @@
    ============================================================ */
 :root {
   /* --- Colors — Primary Backgrounds --- */
-  --color-bg-primary:      #F7F5EF;  /* Warm Ivory */
-  --color-bg-secondary:    #FFFFFF;  /* White */
-  --color-bg-alternate:    #E8EFE7;  /* Soft Sage */
+  --color-bg-primary: #F7F5EF;
+  /* Warm Ivory */
+  --color-bg-secondary: #FFFFFF;
+  /* White */
+  --color-bg-alternate: #E8EFE7;
+  /* Soft Sage */
 
   /* --- Colors — Text --- */
-  --color-text-primary:    #1F1F1F;
-  --color-text-secondary:  #5D6662;
-  --color-text-inverse:    #FFFFFF;
+  --color-text-primary: #1F1F1F;
+  --color-text-secondary: #5D6662;
+  --color-text-inverse: #FFFFFF;
 
   /* --- Colors — Brand --- */
-  --color-brand:           #4E7C63;  /* Muted Forest Green */
-  --color-brand-dark:      #355845;  /* Dark Brand */
-  --color-brand-light:     rgba(78, 124, 99, 0.08); /* Light green for hover states */
+  --color-brand: #4E7C63;
+  /* Muted Forest Green */
+  --color-brand-dark: #355845;
+  /* Dark Brand */
+  --color-brand-light: rgba(78, 124, 99, 0.08);
+  /* Light green for hover states */
 
   /* --- Colors — Accent (use sparingly: buttons, badges, highlights) --- */
-  --color-accent:          #E58C73;  /* Warm Coral */
+  --color-accent: #E58C73;
+  /* Warm Coral */
 
   /* --- Colors — Utility --- */
-  --color-border:          #D9DDD8;
-  --color-success:         #7BAE7F;
-  --color-error:           #D95C5C;
+  --color-border: #D9DDD8;
+  --color-success: #7BAE7F;
+  --color-error: #D95C5C;
 
   /* --- Colors — Overlays --- */
-  --color-hero-overlay:    rgba(0, 0, 0, 0.35);
+  --color-hero-overlay: rgba(0, 0, 0, 0.35);
 
   /* --- Typography — Font Families --- */
-  --font-heading:          'Poppins', sans-serif;
-  --font-body:             'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
 
   /* --- Typography — Font Weights --- */
-  --fw-regular:            400;
-  --fw-medium:             500;
-  --fw-semibold:           600;
-  --fw-bold:               700;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 
   /* --- Typography — Font Scale --- */
-  --fs-hero:               3.5rem;    /* 56px */
-  --fs-section:            2.5rem;    /* 40px */
-  --fs-card:               1.5rem;    /* 24px */
-  --fs-body:               1.125rem;  /* 18px */
-  --fs-small:              1rem;      /* 16px */
-  --fs-caption:            0.875rem;  /* 14px */
+  --fs-hero: 3.5rem;
+  /* 56px */
+  --fs-section: 2.5rem;
+  /* 40px */
+  --fs-card: 1.5rem;
+  /* 24px */
+  --fs-body: 1.125rem;
+  /* 18px */
+  --fs-small: 1rem;
+  /* 16px */
+  --fs-caption: 0.875rem;
+  /* 14px */
 
   /* --- Typography — Line Heights --- */
-  --lh-heading:            1.3;
-  --lh-body:               1.7;
-  --lh-tight:              1.4;
+  --lh-heading: 1.3;
+  --lh-body: 1.7;
+  --lh-tight: 1.4;
 
   /* --- Spacing — 8-point system --- */
-  --space-xs:              0.5rem;    /* 8px */
-  --space-sm:              1rem;      /* 16px */
-  --space-md:              1.5rem;    /* 24px */
-  --space-lg:              2rem;      /* 32px */
-  --space-xl:              3rem;      /* 48px */
-  --space-2xl:             4rem;      /* 64px */
-  --space-3xl:             5rem;      /* 80px */
-  --space-4xl:             6rem;      /* 96px */
-  --space-5xl:             7.5rem;    /* 120px */
+  --space-xs: 0.5rem;
+  /* 8px */
+  --space-sm: 1rem;
+  /* 16px */
+  --space-md: 1.5rem;
+  /* 24px */
+  --space-lg: 2rem;
+  /* 32px */
+  --space-xl: 3rem;
+  /* 48px */
+  --space-2xl: 4rem;
+  /* 64px */
+  --space-3xl: 5rem;
+  /* 80px */
+  --space-4xl: 6rem;
+  /* 96px */
+  --space-5xl: 7.5rem;
+  /* 120px */
 
   /* --- Section Padding --- */
-  --section-py:            var(--space-5xl);  /* 100px top & bottom (adjusted from spec 100px ≈ 6.25rem, using 120px for generous whitespace) */
-  --section-px-desktop:    var(--space-3xl);  /* 80px */
-  --section-px-tablet:     var(--space-lg);   /* 40px → using 32px for 8-pt grid compliance */
-  --section-px-mobile:     var(--space-md);   /* 24px */
+  --section-py: var(--space-5xl);
+  /* 100px top & bottom (adjusted from spec 100px ≈ 6.25rem, using 120px for generous whitespace) */
+  --section-px-desktop: var(--space-3xl);
+  /* 80px */
+  --section-px-tablet: var(--space-lg);
+  /* 40px → using 32px for 8-pt grid compliance */
+  --section-px-mobile: var(--space-md);
+  /* 24px */
 
   /* --- Layout --- */
-  --max-content-width:     75rem;     /* 1200px */
-  --max-hero-content:      43.75rem; /* 700px */
+  --max-content-width: 75rem;
+  /* 1200px */
+  --max-hero-content: 43.75rem;
+  /* 700px */
 
   /* --- Border Radius --- */
-  --radius-sm:             0.5rem;   /* 8px */
-  --radius-md:             1.25rem;  /* 20px — cards, images */
-  --radius-pill:           999px;    /* Buttons */
+  --radius-sm: 0.5rem;
+  /* 8px */
+  --radius-md: 1.25rem;
+  /* 20px — cards, images */
+  --radius-pill: 999px;
+  /* Buttons */
 
   /* --- Shadows --- */
-  --shadow-card:           0 10px 30px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover:     0 20px 40px rgba(0, 0, 0, 0.10);
-  --shadow-nav:            0 2px 16px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 20px 40px rgba(0, 0, 0, 0.10);
+  --shadow-nav: 0 2px 16px rgba(0, 0, 0, 0.06);
 
   /* --- Transitions --- */
-  --transition-speed:      300ms;
-  --transition-ease:       ease;
-  --transition-default:    var(--transition-speed) var(--transition-ease);
+  --transition-speed: 300ms;
+  --transition-ease: ease;
+  --transition-default: var(--transition-speed) var(--transition-ease);
 }
 
 
@@ -137,7 +168,8 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 100%; /* 16px base */
+  font-size: 100%;
+  /* 16px base */
   -webkit-text-size-adjust: 100%;
 }
 
@@ -148,7 +180,8 @@ body {
   line-height: var(--lh-body);
   color: var(--color-text-primary);
   background-color: var(--color-bg-primary);
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -165,7 +198,8 @@ a {
   transition: color var(--transition-default);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -196,7 +230,12 @@ button {
    Headings use Poppins; body uses Inter.
    Consistent scale from DESIGN_SYSTEM.md.
    ============================================================ */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   line-height: var(--lh-heading);
   color: var(--color-text-primary);
@@ -457,7 +496,7 @@ p {
   padding: var(--space-lg);
   box-shadow: var(--shadow-card);
   transition: transform var(--transition-default),
-              box-shadow var(--transition-default);
+    box-shadow var(--transition-default);
 }
 
 .card:hover {
@@ -515,6 +554,7 @@ p {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -526,6 +566,7 @@ p {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -542,12 +583,29 @@ p {
 }
 
 /* Stagger delays for sequential animation */
-.animate-delay-1 { animation-delay: 0.1s; }
-.animate-delay-2 { animation-delay: 0.2s; }
-.animate-delay-3 { animation-delay: 0.3s; }
-.animate-delay-4 { animation-delay: 0.4s; }
-.animate-delay-5 { animation-delay: 0.5s; }
-.animate-delay-6 { animation-delay: 0.6s; }
+.animate-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-5 {
+  animation-delay: 0.5s;
+}
+
+.animate-delay-6 {
+  animation-delay: 0.6s;
+}
 
 
 /* ============================================================
@@ -668,20 +726,20 @@ p {
   height: 2px;
   background-color: var(--color-text-primary);
   transition: transform var(--transition-default),
-              opacity var(--transition-default);
+    opacity var(--transition-default);
   transform-origin: center;
 }
 
 /* Hamburger animation when checked */
-.nav__toggle:checked ~ .nav__toggle-label span:nth-child(1) {
+.nav__toggle:checked~.nav__toggle-label span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
-.nav__toggle:checked ~ .nav__toggle-label span:nth-child(2) {
+.nav__toggle:checked~.nav__toggle-label span:nth-child(2) {
   opacity: 0;
 }
 
-.nav__toggle:checked ~ .nav__toggle-label span:nth-child(3) {
+.nav__toggle:checked~.nav__toggle-label span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
@@ -862,7 +920,7 @@ p {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
   transition: transform var(--transition-default),
-              box-shadow var(--transition-default);
+    box-shadow var(--transition-default);
 }
 
 .stat-card:hover {
@@ -882,7 +940,7 @@ p {
   font-size: var(--fs-card);
   margin: 0 auto var(--space-md);
   transition: background-color var(--transition-default),
-              color var(--transition-default);
+    color var(--transition-default);
 }
 
 .stat-card:hover .stat-card__icon {
@@ -928,7 +986,7 @@ p {
   overflow: hidden;
   box-shadow: var(--shadow-card);
   transition: transform var(--transition-default),
-              box-shadow var(--transition-default);
+    box-shadow var(--transition-default);
 }
 
 .project-card:hover {
@@ -1033,7 +1091,7 @@ p {
   background-color: var(--color-bg-secondary);
   border-radius: var(--radius-md);
   transition: transform var(--transition-default),
-              box-shadow var(--transition-default);
+    box-shadow var(--transition-default);
 }
 
 .impact-feature:hover {
@@ -1053,7 +1111,7 @@ p {
   font-size: var(--fs-body);
   flex-shrink: 0;
   transition: background-color var(--transition-default),
-              color var(--transition-default);
+    color var(--transition-default);
 }
 
 .impact-feature:hover .impact-feature__icon {
@@ -1184,9 +1242,9 @@ p {
 
 .footer__grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-  gap: var(--space-xl);
-  margin-bottom: var(--space-2xl);
+  grid-template-columns: 300px 180px 280px 250px;
+  gap: 4rem;
+  align-items: start;
 }
 
 .footer__heading {
@@ -1219,26 +1277,32 @@ p {
 .footer__logo {
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
-  margin-bottom: var(--space-md);
+  gap: 12px;
+  margin-bottom: 1.5rem;
 }
 
 .footer__logo-img {
-  height: 3rem;
-  width: auto;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .footer__logo-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   font-family: var(--font-heading);
   font-weight: var(--fw-bold);
-  font-size: var(--fs-card);
+  font-size: 2rem;
   color: var(--color-text-inverse);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .footer__logo-name span {
   display: block;
+  margin-top: 2px;
   font-size: var(--fs-caption);
   font-weight: var(--fw-regular);
   color: rgba(255, 255, 255, 0.6);
@@ -1256,7 +1320,7 @@ p {
   color: rgba(255, 255, 255, 0.75);
   font-size: var(--fs-small);
   transition: color var(--transition-default),
-              padding-left var(--transition-default);
+    padding-left var(--transition-default);
 }
 
 .footer__link:hover,
@@ -1330,6 +1394,172 @@ p {
   margin-bottom: 0;
 }
 
+.footer__text {
+  max-width: 320px;
+}
+
+.footer__heading {
+  margin-top: 12px;
+}
+
+
+/* ============================================================
+   20. Contact Page Styles
+   ============================================================ */
+
+/* Hero Overrides */
+.contact-hero .section-heading,
+.contact-hero .contact-hero__text,
+.contact-hero .section-label {
+  color: var(--color-text-inverse);
+}
+
+/* Contact Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(360px, 1fr));
+  gap: 5rem;
+  align-items: start;
+}
+
+/* Info Cards */
+.info-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.info-card {
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-default), box-shadow var(--transition-default);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.info-card__icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-brand-light);
+  color: var(--color-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-card);
+  flex-shrink: 0;
+}
+
+.info-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.info-card__text {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-small);
+  line-height: var(--lh-body);
+  margin-bottom: 0;
+}
+
+.info-card__text a {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-default);
+}
+
+.info-card__text a:hover {
+  color: var(--color-brand);
+}
+
+/* Form Styles */
+.contact-form {
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-primary);
+}
+
+.form-input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  transition: border-color var(--transition-default), box-shadow var(--transition-default);
+}
+
+.form-textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px var(--color-brand-light);
+}
+
+.form-btn {
+  width: 100%;
+  min-width: 220px;
+  margin-top: var(--space-sm);
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  border-radius: var(--radius-pill);
+}
+
+/* Map Section */
+.map-card {
+  padding: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.map-iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+
 
 /* ============================================================
    17. Accessibility & Focus States
@@ -1383,6 +1613,7 @@ p {
    18. Responsive — Tablet (768px – 1199px)
    ============================================================ */
 @media screen and (max-width: 1199px) {
+
   /* Adjust container padding */
   .container {
     padding-left: var(--section-px-tablet);
@@ -1396,7 +1627,8 @@ p {
   }
 
   /* Typography scale down */
-  h1, .hero__heading {
+  h1,
+  .hero__heading {
     font-size: 2.75rem;
   }
 
@@ -1406,6 +1638,11 @@ p {
 
   /* Two-column grids stay but with smaller gap */
   .split {
+    gap: var(--space-xl);
+  }
+
+  /* Contact page grid on tablet */
+  .contact-grid {
     gap: var(--space-xl);
   }
 
@@ -1444,6 +1681,7 @@ p {
    19. Responsive — Mobile (< 768px)
    ============================================================ */
 @media screen and (max-width: 767px) {
+
   /* Container mobile padding */
   .container {
     padding-left: var(--section-px-mobile);
@@ -1457,7 +1695,8 @@ p {
   }
 
   /* Typography mobile scale */
-  h1, .hero__heading {
+  h1,
+  .hero__heading {
     font-size: 2rem;
   }
 
@@ -1496,7 +1735,7 @@ p {
     overflow-y: auto;
   }
 
-  .nav__toggle:checked ~ .nav__links {
+  .nav__toggle:checked~.nav__links {
     right: 0;
   }
 
@@ -1520,7 +1759,7 @@ p {
     z-index: 999;
   }
 
-  .nav__toggle:checked ~ .nav__overlay {
+  .nav__toggle:checked~.nav__overlay {
     display: block;
   }
 
@@ -1528,6 +1767,12 @@ p {
 
   /* Split layouts stack vertically */
   .split {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  /* Contact page grid on mobile */
+  .contact-grid {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
   }

@@ -1,0 +1,827 @@
+# DESIGN_SYSTEM.md
+
+# InAmigos Foundation Website Design System
+
+> This document defines every visual and UI decision for the project.
+> 
+> 
+> The developer should follow this specification exactly unless a technical limitation makes it impossible.
+> 
+> No visual decisions should be guessed.
+> 
+
+---
+
+# Design Philosophy
+
+The website should feel calm, modern, trustworthy and premium.
+
+It should communicate hope and professionalism through simplicity rather than excessive decoration.
+
+The overall experience should resemble a modern nonprofit organization rather than a college assignment.
+
+Visual inspiration comes from
+
+https://hartregie.nl/
+
+Only use the following as inspiration:
+
+- color mood
+- typography style
+- spacing
+- visual hierarchy
+- clean layouts
+
+Do NOT copy:
+
+- layouts
+- graphics
+- illustrations
+- icons
+- branding
+- components
+
+The final website must be original.
+
+---
+
+# Design Keywords
+
+The interface should feel
+
+- Minimal
+- Elegant
+- Warm
+- Human-centered
+- Spacious
+- Calm
+- Professional
+- Modern
+- Accessible
+
+Avoid making the interface feel
+
+- Corporate
+- Flashy
+- Overcrowded
+- Cartoonish
+- Generic NGO template
+
+---
+
+# Visual Hierarchy
+
+The user's attention should naturally flow in this order
+
+Hero
+
+↓
+
+About
+
+↓
+
+Impact Statistics
+
+↓
+
+Projects
+
+↓
+
+Social Impact
+
+↓
+
+Gallery
+
+↓
+
+Volunteer CTA
+
+↓
+
+Footer
+
+Every section should feel visually connected.
+
+---
+
+# Layout
+
+Maximum Content Width
+
+1200px
+
+Section Padding
+
+Top
+
+100px
+
+Bottom
+
+100px
+
+Horizontal Padding
+
+Desktop
+
+80px
+
+Tablet
+
+40px
+
+Mobile
+
+24px
+
+---
+
+# Grid System
+
+Desktop
+
+12-column layout
+
+Tablet
+
+2-column layout
+
+Mobile
+
+Single column
+
+Never allow horizontal scrolling.
+
+---
+
+# Spacing System
+
+Use an 8-point spacing system.
+
+Allowed spacing values
+
+8px
+
+16px
+
+24px
+
+32px
+
+48px
+
+64px
+
+80px
+
+96px
+
+120px
+
+Keep spacing consistent across the website.
+
+---
+
+# Color Palette
+
+## Primary Background
+
+Warm Ivory
+
+#F7F5EF
+
+---
+
+## Secondary Background
+
+White
+
+#FFFFFF
+
+---
+
+## Alternate Section Background
+
+Soft Sage
+
+#E8EFE7
+
+---
+
+## Primary Text
+
+#1F1F1F
+
+---
+
+## Secondary Text
+
+#5D6662
+
+---
+
+## Primary Brand Color
+
+Muted Forest Green
+
+#4E7C63
+
+---
+
+## Dark Brand Color
+
+#355845
+
+---
+
+## Accent Color
+
+Warm Coral
+
+#E58C73
+
+Only use the accent for
+
+- buttons
+- badges
+- highlights
+- decorative elements
+
+Do not overuse it.
+
+---
+
+## Border Color
+
+#D9DDD8
+
+---
+
+## Success
+
+#7BAE7F
+
+---
+
+## Error
+
+#D95C5C
+
+---
+
+# Color Usage
+
+60%
+
+Neutral backgrounds
+
+30%
+
+Green brand colors
+
+10%
+
+Coral accent
+
+The interface should always feel light and airy.
+
+---
+
+# Typography
+
+## Heading Font
+
+Poppins
+
+Weights
+
+600
+
+700
+
+---
+
+## Body Font
+
+Inter
+
+Weights
+
+400
+
+500
+
+---
+
+# Font Scale
+
+Hero Heading
+
+56px
+
+Section Heading
+
+40px
+
+Card Heading
+
+24px
+
+Body Text
+
+18px
+
+Small Text
+
+16px
+
+Caption
+
+14px
+
+Maintain consistent line-height for readability.
+
+---
+
+# Buttons
+
+Primary Button
+
+Background
+
+#4E7C63
+
+Text
+
+White
+
+Hover
+
+#355845
+
+Border Radius
+
+999px
+
+Padding
+
+16px 32px
+
+Transition
+
+300ms
+
+---
+
+Secondary Button
+
+Background
+
+Transparent
+
+Border
+
+2px solid #4E7C63
+
+Text
+
+#4E7C63
+
+Hover
+
+Light green background
+
+---
+
+# Cards
+
+Background
+
+White
+
+Border Radius
+
+20px
+
+Padding
+
+32px
+
+Shadow
+
+0 10px 30px rgba(0,0,0,.06)
+
+Hover
+
+Translate Y
+
+- 8px
+
+Transition
+
+300ms ease
+
+Cards should never appear flat.
+
+---
+
+# Images
+
+Use
+
+Rounded corners
+
+20px radius
+
+Large imagery
+
+Natural photography
+
+Images should fill their containers without distortion.
+
+Avoid obvious stock photography.
+
+---
+
+# Navigation
+
+Sticky
+
+White background
+
+Small shadow when scrolling
+
+Logo left
+
+Navigation right
+
+Menu Items
+
+Home
+
+About
+
+Projects
+
+Impact
+
+Volunteer
+
+Contact
+
+Desktop
+
+Horizontal menu
+
+Mobile
+
+Hamburger menu
+
+---
+
+# Hero Section
+
+Height
+
+100vh
+
+Large background image
+
+Dark overlay
+
+rgba(0,0,0,.35)
+
+Content aligned vertically center.
+
+Maximum content width
+
+700px
+
+Buttons
+
+Two CTA buttons
+
+Large typography
+
+Minimal text
+
+---
+
+# About Section
+
+Two-column layout
+
+Image
+
+Content
+
+Mission
+
+Vision
+
+Trust badges
+
+Responsive stacking on mobile.
+
+---
+
+# Statistics
+
+Four statistic cards
+
+Equal width
+
+Large numbers
+
+Small descriptions
+
+Hover animation
+
+Icons above numbers
+
+---
+
+# Projects
+
+Primary feature section.
+
+Desktop
+
+Three columns
+
+Tablet
+
+Two columns
+
+Mobile
+
+One column
+
+Each project card contains
+
+Image
+
+Icon
+
+Title
+
+Description
+
+Cards should have consistent height.
+
+---
+
+# Social Impact
+
+Split layout
+
+Image
+
+Text
+
+Four feature blocks
+
+Consistent icon style
+
+---
+
+# Gallery
+
+Responsive grid
+
+Six to twelve images
+
+Hover zoom effect
+
+Rounded corners
+
+Equal spacing
+
+---
+
+# Volunteer CTA
+
+Full-width colored section
+
+Green background
+
+White typography
+
+Centered content
+
+Two buttons
+
+Volunteer
+
+Donate
+
+---
+
+# Footer
+
+Dark green background
+
+White text
+
+Contains
+
+Logo
+
+Quick Links
+
+Contact
+
+Social Links
+
+Copyright
+
+Simple and clean.
+
+---
+
+# Icons
+
+Use
+
+Font Awesome
+
+Style
+
+Outline
+
+Consistent sizing
+
+Avoid emojis.
+
+---
+
+# Animations
+
+Use only subtle animations.
+
+Allowed animations
+
+Fade In
+
+Fade Up
+
+Button Scale
+
+Card Lift
+
+Image Zoom
+
+Navigation Underline
+
+Duration
+
+300ms
+
+Ease
+
+ease
+
+Avoid
+
+Bounce
+
+Rotate
+
+Spin
+
+Flip
+
+Parallax
+
+Heavy motion
+
+---
+
+# Background Decorations
+
+Organic abstract shapes
+
+Very low opacity
+
+Used sparingly
+
+Never distract from content.
+
+---
+
+# Accessibility
+
+Semantic HTML
+
+Keyboard accessible
+
+Visible focus states
+
+Alt text for every image
+
+Proper heading hierarchy
+
+Maintain sufficient color contrast.
+
+---
+
+# Responsiveness
+
+Desktop
+
+1200px+
+
+Tablet
+
+768px–1199px
+
+Mobile
+
+Below 768px
+
+All layouts should adapt naturally.
+
+No element should overflow the viewport.
+
+---
+
+# CSS Guidelines
+
+Use CSS Variables
+
+Organize styles into logical sections
+
+Reuse utility classes
+
+Avoid duplicate styling
+
+Keep selectors readable
+
+Avoid !important unless absolutely necessary.
+
+---
+
+# Performance
+
+Optimize images
+
+Lazy-load gallery images
+
+Minimize unnecessary CSS
+
+Keep animations lightweight
+
+Avoid unnecessary JavaScript.
+
+---
+
+# Things to Avoid
+
+Do NOT use
+
+Bootstrap
+
+Tailwind
+
+Material UI
+
+React
+
+Vue
+
+Angular
+
+Heavy shadows
+
+Neon colors
+
+Bright gradients
+
+Glassmorphism
+
+Inconsistent spacing
+
+Random border radii
+
+Large animations
+
+Generic NGO templates
+
+---
+
+# Final Design Goal
+
+The finished website should feel like the official landing page of a modern nonprofit organization.
+
+The interface should immediately communicate
+
+- Trust
+- Compassion
+- Professionalism
+- Transparency
+- Community
+
+A visitor should feel inspired to learn more and participate without the design distracting from the organization's mission.

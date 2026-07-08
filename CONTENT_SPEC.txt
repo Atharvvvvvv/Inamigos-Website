@@ -1,0 +1,463 @@
+# CONTENT_SPEC.md
+
+# InAmigos Foundation Website Content Specification
+
+> This document is the single source of truth for all website content.
+> 
+> 
+> Every piece of text, statistic, image, project description, and contact information displayed on the website must come from the official InAmigos Foundation website.
+> 
+> Never invent content.
+> 
+> Never fabricate statistics.
+> 
+> Never create fictional projects.
+> 
+> If information is unavailable on the official website, omit it rather than guessing.
+> 
+
+---
+
+# Official Website
+
+https://inamigosfoundation.org.in/
+
+All information must be verified from this website before implementation.
+
+---
+
+# Website Goal
+
+The website should educate visitors about InAmigos Foundation, showcase its impact, explain its initiatives, and encourage volunteering and community participation.
+
+The tone should be professional, trustworthy, warm, and inspiring.
+
+---
+
+# Navigation
+
+Menu Items
+
+- Home
+- About
+- Projects
+- Impact
+- Gallery
+- Volunteer
+- Contact
+
+Each navigation item should scroll smoothly to its corresponding section.
+
+---
+
+# Hero Section
+
+## Heading
+
+Together We Can Build a Better Tomorrow
+
+## Subheading
+
+InAmigos Foundation is a Section 8 registered non-profit organization dedicated to creating meaningful social impact through education, women empowerment, environmental sustainability, youth development, community welfare, and animal care.
+
+## Primary Button
+
+Explore Projects
+
+Scrolls to the Projects section.
+
+## Secondary Button
+
+Become a Volunteer
+
+Scrolls to the Volunteer section.
+
+## Hero Image
+
+Use an official image showing volunteers or community service from the InAmigos Foundation website or official social media pages.
+
+Do not use stock photography.
+
+---
+
+# About Section
+
+## Heading
+
+Who We Are
+
+## Content
+
+InAmigos Foundation is a Section 8 registered non-profit organization founded on 23 September 2020 by Mr. Govind Shukla.
+
+The organization works to create positive social impact by empowering communities through education, environmental sustainability, women empowerment, youth development, and animal welfare.
+
+By connecting volunteers, professionals, students, and communities, the foundation strives to build a more compassionate, inclusive, and sustainable society.
+
+## Mission
+
+Uniting Minds For Change
+
+## Vision
+
+To empower communities through sustainable social initiatives that improve lives and create lasting positive impact.
+
+---
+
+# Trust & Recognition
+
+Display these official registrations and certifications as trust badges.
+
+- Section 8 Registered
+- 80G Certified
+- 12A Certified
+- CSR-1 Registered
+- NITI Aayog Registered
+- ISO 9001:2015 Certified
+
+Do not display certifications that are not listed on the official website.
+
+---
+
+# Impact Statistics
+
+Only display statistics officially published by InAmigos Foundation.
+
+Use large numbers with short labels.
+
+Examples include:
+
+50,000+
+
+Meals & Clothing Distributed
+
+30,000+
+
+Interns Trained
+
+20,000+
+
+Saplings Planted
+
+50+
+
+Stray Animals Fed Daily
+
+If any statistic changes on the official website, update it here before changing the website.
+
+---
+
+# Projects Section
+
+Display exactly six flagship projects.
+
+Each project card should contain
+
+- Official project image
+- Project title
+- Short description
+- Social purpose
+
+---
+
+## Project SEVA
+
+Purpose
+
+Providing food, clothing, and essential support to underprivileged communities.
+
+Focus Areas
+
+- Food distribution
+- Clothing drives
+- Community support
+
+---
+
+## BACHPANSHALA
+
+Purpose
+
+Improving access to education for underprivileged children.
+
+Focus Areas
+
+- Basic education
+- Digital literacy
+- Learning support
+- Child development
+
+---
+
+## JEEV
+
+Purpose
+
+Promoting animal welfare and compassionate care.
+
+Focus Areas
+
+- Feeding stray animals
+- Animal care
+- Animal protection
+
+---
+
+## UDAAN
+
+Purpose
+
+Empowering women through education and skill development.
+
+Focus Areas
+
+- Skill development
+- Financial independence
+- Rural women empowerment
+- Menstrual hygiene awareness
+
+---
+
+## PRAKRITI
+
+Purpose
+
+Promoting environmental sustainability.
+
+Focus Areas
+
+- Tree plantation
+- Environmental awareness
+- Sustainable practices
+
+---
+
+## VIKAS
+
+Purpose
+
+Preparing young people for successful careers through internships and practical learning.
+
+Focus Areas
+
+- Internship opportunities
+- Skill development
+- Professional experience
+- Career readiness
+
+---
+
+# Social Impact Section
+
+## Heading
+
+Creating Meaningful Change
+
+## Introduction
+
+Every initiative undertaken by InAmigos Foundation is designed to improve lives, strengthen communities, and create sustainable social impact.
+
+Highlight four focus areas.
+
+---
+
+### Education
+
+Supporting children through quality education and learning opportunities.
+
+---
+
+### Women Empowerment
+
+Helping women become financially independent through skills and awareness.
+
+---
+
+### Environmental Sustainability
+
+Building greener communities through plantation drives and environmental campaigns.
+
+---
+
+### Community Welfare
+
+Supporting vulnerable communities through food distribution, social initiatives, and volunteer efforts.
+
+---
+
+# Gallery
+
+Display official photographs from
+
+- Food distribution
+- Plantation drives
+- Children education
+- Internship activities
+- Animal welfare
+- Volunteer programs
+
+Requirements
+
+Minimum
+
+6 images
+
+Maximum
+
+12 images
+
+Every image must come from official InAmigos Foundation sources.
+
+No stock images.
+
+---
+
+# Volunteer Section
+
+## Heading
+
+Join Us in Making a Difference
+
+## Description
+
+Whether you volunteer your time, contribute your skills, or support our initiatives, every action helps create lasting change in the lives of individuals and communities.
+
+## Buttons
+
+Become a Volunteer
+
+Donate Now
+
+---
+
+# Contact Section
+
+## Organization
+
+InAmigos Foundation
+
+## Email
+
+support@inamigosfoundation.org.in
+
+## Alternate Email
+
+inamigosfoundation@gmail.com
+
+## Phone
+
++91 6267309902
+
+## Address
+
+Ward No. 5
+
+Gram Post Sipat
+
+Ujwal Nagar
+
+Bilaspur
+
+Chhattisgarh
+
+495555
+
+---
+
+# Social Media
+
+Display icons linking to the official accounts only.
+
+Include
+
+- Instagram
+- Facebook
+- LinkedIn
+- YouTube
+
+Do not link to unofficial pages.
+
+---
+
+# Footer
+
+Include
+
+Organization Name
+
+Quick Navigation
+
+Contact Information
+
+Social Media Links
+
+Copyright
+
+© 2026 InAmigos Foundation. Awareness webpage created for internship purposes.
+
+---
+
+# Images
+
+Every image must be taken from the official InAmigos Foundation website or official social media platforms.
+
+Preferred image categories
+
+- Volunteers
+- Community service
+- Education
+- Plantation drives
+- Animal welfare
+- Women empowerment
+- Internship activities
+
+Avoid
+
+- Stock photography
+- AI-generated images
+- Generic NGO illustrations
+
+---
+
+# Content Rules
+
+Always
+
+- Use official organization information.
+- Maintain a professional tone.
+- Keep paragraphs concise and readable.
+- Preserve the organization's identity.
+
+Never
+
+- Invent statistics.
+- Add fake testimonials.
+- Create fictional campaigns.
+- Add partner organizations that are not officially listed.
+- Exaggerate achievements.
+
+---
+
+# Maintenance Guidelines
+
+Before updating website content
+
+1. Verify information from the official website.
+2. Update this document first.
+3. Then update the website.
+
+This document must always remain the authoritative source for website content.
+
+---
+
+# Final Objective
+
+A visitor should finish reading the website with a clear understanding of:
+
+- What InAmigos Foundation is.
+- Why the organization exists.
+- Which projects it runs.
+- The impact it has created.
+- How they can participate through volunteering or support.
+
+Every section should reinforce trust, authenticity, and transparency while remaining faithful to the official information published by InAmigos Foundation.

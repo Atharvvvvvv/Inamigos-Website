@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================
+       InAmigos Foundation — Awareness Website
+       =====================================================
+       A single-page responsive awareness website built to 
+       showcase the mission, projects, and social impact of 
+       the InAmigos Foundation.
+
+       Technology: HTML5 + CSS3 only. No frameworks.
+       Source of Truth: README.md, DESIGN_SYSTEM.md, CONTENT_SPEC.md
+       ===================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>InAmigos Foundation — Together We Can Build a Better Tomorrow</title>
+  <meta name="description" content="InAmigos Foundation is a Section 8 registered non-profit organization dedicated to creating meaningful social impact through education, women empowerment, environmental sustainability, youth development, community welfare, and animal care.">
+  <meta name="keywords" content="InAmigos Foundation, NGO, non-profit, education, women empowerment, environment, animal welfare, volunteer, India">
+
+  <!-- Favicon — Official InAmigos icon -->
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+
+  <!-- Google Fonts — Poppins (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome — Outline icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       SKIP LINK — Accessibility: Skip to main content
+       ===================================================== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+  <!-- =====================================================
+       COMPONENT: Navigation
+       =====================================================
+       Sticky navbar. Logo left, links right.
+       CSS-only hamburger menu on mobile.
+       Menu items from CONTENT_SPEC: Home, About, Projects, 
+       Impact, Gallery, Volunteer, Contact
+       ===================================================== -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+
+      <!-- Logo -->
+      <a href="#home" class="nav__logo" aria-label="InAmigos Foundation — Go to homepage">
+        <img 
+          src="images/logo.jpg" 
+          alt="InAmigos Foundation official logo" 
+          class="nav__logo-img"
+          width="48"
+          height="48"
+        >
+        <div class="nav__logo-text">
+          InAmigos
+          <span>Foundation</span>
+        </div>
+      </a>
+
+      <!-- Mobile hamburger toggle (CSS-only, no JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav__toggle sr-only" aria-label="Toggle navigation menu">
+
+      <!-- Navigation Links -->
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#impact" class="nav__link">Impact</a>
+        <a href="#gallery" class="nav__link">Gallery</a>
+        <a href="#volunteer" class="nav__link">Volunteer</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <!-- Hamburger icon label (only visible on mobile) -->
+      <label for="nav-toggle" class="nav__toggle-label" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Mobile overlay (closes menu when clicking outside) -->
+      <label for="nav-toggle" class="nav__overlay" aria-hidden="true"></label>
+
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+  <main id="main-content">
+
+
+    <!-- =====================================================
+         COMPONENT: Hero Section
+         =====================================================
+         100vh height. Background image with dark overlay.
+         Centered content (max 700px). Two CTA buttons.
+         Content from CONTENT_SPEC.md — Hero Section.
+         ===================================================== -->
+    <section id="home" class="hero" aria-label="Hero banner">
+
+      <!-- Background image — official InAmigos Foundation photo -->
+      <img 
+        src="images/hero-bg.jpg" 
+        alt="InAmigos Foundation volunteers engaged in community service activities" 
+        class="hero__bg"
+      >
+
+      <!-- Dark overlay for text readability -->
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Hero content -->
+      <div class="hero__content animate-fade-up">
+        <h1 class="hero__heading">Together We Can Build a Better Tomorrow</h1>
+        <p class="hero__subheading">
+          InAmigos Foundation is a Section 8 registered non-profit organization dedicated to creating meaningful social impact through education, women empowerment, environmental sustainability, youth development, community welfare, and animal care.
+        </p>
+        <div class="btn-group btn-group--center">
+          <!-- Primary CTA — scrolls to Projects section -->
+          <a href="#projects" class="btn btn--primary">Explore Projects</a>
+          <!-- Secondary CTA — scrolls to Volunteer section -->
+          <a href="#volunteer" class="btn btn--white-outline">Become a Volunteer</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         COMPONENT: About Section
+         =====================================================
+         Two-column layout: Image + Content.
+         Includes Mission, Vision, and Trust Badges.
+         Content from CONTENT_SPEC.md — About Section.
+         ===================================================== -->
+    <section id="about" class="section section--ivory" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="split">
+
+          <!-- About Image -->
+          <figure class="about__image-wrapper animate-fade-up">
+            <img 
+              src="images/about.jpg" 
+              alt="InAmigos Foundation team members during a community welfare activity" 
+              class="about__image"
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- About Content -->
+          <div class="about__content animate-fade-up animate-delay-2">
+
+            <!-- Section Label -->
+            <p class="section-label">About Us</p>
+
+            <!-- Heading -->
+            <h2 id="about-heading" class="section-heading">Who We Are</h2>
+
+            <!-- Description — from CONTENT_SPEC -->
+            <p class="about__text">
+              InAmigos Foundation is a Section 8 registered non-profit organization founded on 23 September 2020 by Mr. Govind Shukla.
+            </p>
+            <p class="about__text">
+              The organization works to create positive social impact by empowering communities through education, environmental sustainability, women empowerment, youth development, and animal welfare.
+            </p>
+            <p class="about__text">
+              By connecting volunteers, professionals, students, and communities, the foundation strives to build a more compassionate, inclusive, and sustainable society.
+            </p>
+
+            <!-- Mission & Vision -->
+            <div class="about__highlights">
+              <div class="about__highlight">
+                <h4>Mission</h4>
+                <p>Uniting Minds For Change</p>
+              </div>
+              <div class="about__highlight">
+                <h4>Vision</h4>
+                <p>To empower communities through sustainable social initiatives that improve lives and create lasting positive impact.</p>
+              </div>
+            </div>
+
+            <!-- Trust & Recognition Badges — from CONTENT_SPEC -->
+            <div class="trust-badges" aria-label="Official certifications and registrations">
+              <span class="trust-badge">
+                <i class="fa-regular fa-circle-check" aria-hidden="true"></i> Section 8 Registered
+              </span>
+              <span class="trust-badge">
+                <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 80G Certified
+              </span>
+              <span class="trust-badge">
+                <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 12A Certified
+              </span>
+              <span class="trust-badge">
+                <i class="fa-regular fa-circle-check" aria-hidden="true"></i> CSR-1 Registered
+              </span>
+              <span class="trust-badge">
+                <i class="fa-regular fa-circle-check" aria-hidden="true"></i> NITI Aayog Registered
+              </span>
+              <span class="trust-badge">
+                <i class="fa-regular fa-circle-check" aria-hidden="true"></i> ISO 9001:2015 Certified
+              </span>
+            </div>
+
+          </div><!-- /about__content -->
+
+        </div><!-- /split -->
+      </div><!-- /container -->
+    </section>
+
+
+    <!-- =====================================================
+         COMPONENT: Impact Statistics Section
+         =====================================================
+         Four equal-width stat cards with icons, large numbers,
+         and short labels. Hover animation.
+         Statistics from CONTENT_SPEC.md — Impact Statistics.
+         ===================================================== -->
+    <section id="impact" class="section section--sage" aria-labelledby="stats-heading">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header animate-fade-up">
+          <p class="section-label">Our Impact</p>
+          <h2 id="stats-heading" class="section-heading">Numbers That Speak</h2>
+        </div>
+
+        <!-- Statistics Grid — 4 columns -->
+        <div class="grid-4">
+
+          <!-- Stat 1: Meals & Clothing -->
+          <article class="stat-card animate-fade-up animate-delay-1" aria-label="50,000+ Meals and Clothing Distributed">
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+            </div>
+            <p class="stat-card__number">50,000+</p>
+            <p class="stat-card__label">Meals &amp; Clothing Distributed</p>
+          </article>
+
+          <!-- Stat 2: Interns Trained -->
+          <article class="stat-card animate-fade-up animate-delay-2" aria-label="30,000+ Interns Trained">
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+            </div>
+            <p class="stat-card__number">30,000+</p>
+            <p class="stat-card__label">Interns Trained</p>
+          </article>
+
+          <!-- Stat 3: Saplings Planted -->
+          <article class="stat-card animate-fade-up animate-delay-3" aria-label="20,000+ Saplings Planted">
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+            </div>
+            <p class="stat-card__number">20,000+</p>
+            <p class="stat-card__label">Saplings Planted</p>
+          </article>
+
+          <!-- Stat 4: Stray Animals Fed -->
+          <article class="stat-card animate-fade-up animate-delay-4" aria-label="50+ Stray Animals Fed Daily">
+            <div class="stat-card__icon">
+              <i class="fa-solid fa-paw" aria-hidden="true"></i>
+            </div>
+            <p class="stat-card__number">50+</p>
+            <p class="stat-card__label">Stray Animals Fed Daily</p>
+          </article>
+
+        </div><!-- /grid-4 -->
+
+      </div><!-- /container -->
+    </section>
+
+
+    <!-- =====================================================
+         COMPONENT: Projects Section
+         =====================================================
+         Six flagship project cards. 3-col desktop, 2-col tablet,
+         1-col mobile. Each card: image, icon, title, description.
+         Projects from CONTENT_SPEC.md — Projects Section.
+         ===================================================== -->
+    <section id="projects" class="section section--white" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header animate-fade-up">
+          <p class="section-label">Our Initiatives</p>
+          <h2 id="projects-heading" class="section-heading">Flagship Projects</h2>
+          <p class="section-intro">
+            InAmigos Foundation runs six flagship projects, each addressing critical social needs — from education and food security to environmental conservation and women empowerment.
+          </p>
+        </div>
+
+        <!-- Projects Grid — 3 columns -->
+        <div class="projects-grid">
+
+          <!-- Project 1: SEVA -->
+          <article class="project-card animate-fade-up animate-delay-1">
+            <div class="project-card__image-wrapper">
+              <img 
+                src="images/project-seva.jpg" 
+                alt="InAmigos Foundation volunteers distributing food and clothing during Project SEVA" 
+                class="project-card__image"
+                loading="lazy"
+              >
+              <div class="project-card__badge" aria-hidden="true">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project SEVA</h3>
+              <p class="project-card__desc">
+                Providing food, clothing, and essential support to underprivileged communities. Focus areas include food distribution, clothing drives, and community support.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 2: BACHPANSHALA -->
+          <article class="project-card animate-fade-up animate-delay-2">
+            <div class="project-card__image-wrapper">
+              <img 
+                src="images/project-bachpanshala.jpg" 
+                alt="Children learning at an InAmigos Foundation Bachpanshala education program" 
+                class="project-card__image"
+                loading="lazy"
+              >
+              <div class="project-card__badge" aria-hidden="true">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">BACHPANSHALA</h3>
+              <p class="project-card__desc">
+                Improving access to education for underprivileged children. Focus areas include basic education, digital literacy, learning support, and child development.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 3: JEEV -->
+          <article class="project-card animate-fade-up animate-delay-3">
+            <div class="project-card__image-wrapper">
+              <img 
+                src="images/project-jeev.jpg" 
+                alt="InAmigos Foundation volunteers caring for and feeding stray animals under Project JEEV" 
+                class="project-card__image"
+                loading="lazy"
+              >
+              <div class="project-card__badge" aria-hidden="true">
+                <i class="fa-solid fa-paw"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project JEEV</h3>
+              <p class="project-card__desc">
+                Promoting animal welfare and compassionate care. Focus areas include feeding stray animals, animal care, and animal protection.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 4: UDAAN -->
+          <article class="project-card animate-fade-up animate-delay-4">
+            <div class="project-card__image-wrapper">
+              <img 
+                src="images/project-udaan.jpg" 
+                alt="Women participating in a skill development workshop under InAmigos Foundation Project UDAAN" 
+                class="project-card__image"
+                loading="lazy"
+              >
+              <div class="project-card__badge" aria-hidden="true">
+                <i class="fa-solid fa-venus"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project UDAAN</h3>
+              <p class="project-card__desc">
+                Empowering women through education and skill development. Focus areas include skill development, financial independence, rural women empowerment, and menstrual hygiene awareness.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 5: PRAKRITI -->
+          <article class="project-card animate-fade-up animate-delay-5">
+            <div class="project-card__image-wrapper">
+              <img 
+                src="images/project-prakriti.jpg" 
+                alt="InAmigos Foundation volunteers planting saplings during a Project PRAKRITI plantation drive" 
+                class="project-card__image"
+                loading="lazy"
+              >
+              <div class="project-card__badge" aria-hidden="true">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project PRAKRITI</h3>
+              <p class="project-card__desc">
+                Promoting environmental sustainability. Focus areas include tree plantation, environmental awareness, and sustainable practices.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 6: VIKAS -->
+          <article class="project-card animate-fade-up animate-delay-6">
+            <div class="project-card__image-wrapper">
+              <img 
+                src="images/project-vikas.jpg" 
+                alt="Young interns gaining professional skills through InAmigos Foundation Project VIKAS internship program" 
+                class="project-card__image"
+                loading="lazy"
+              >
+              <div class="project-card__badge" aria-hidden="true">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project VIKAS</h3>
+              <p class="project-card__desc">
+                Preparing young people for successful careers through internships and practical learning. Focus areas include internship opportunities, skill development, professional experience, and career readiness.
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+
+      </div><!-- /container -->
+    </section>
+
+
+    <!-- =====================================================
+         COMPONENT: Social Impact Section
+         =====================================================
+         Split layout: Image + Text with 4 feature blocks.
+         Consistent icon style across all features.
+         Content from CONTENT_SPEC.md — Social Impact Section.
+         ===================================================== -->
+    <section id="social-impact" class="section section--ivory" aria-labelledby="social-impact-heading">
+      <div class="container">
+        <div class="split">
+
+          <!-- Social Impact Image -->
+          <figure class="impact__image-wrapper animate-fade-up">
+            <img 
+              src="images/social-impact.jpg" 
+              alt="InAmigos Foundation community outreach program creating meaningful social impact" 
+              class="impact__image"
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- Social Impact Content -->
+          <div class="impact__content animate-fade-up animate-delay-2">
+
+            <!-- Section Label -->
+            <p class="section-label">Social Impact</p>
+
+            <!-- Heading -->
+            <h2 id="social-impact-heading" class="section-heading">Creating Meaningful Change</h2>
+
+            <!-- Introduction text — from CONTENT_SPEC -->
+            <p class="about__text">
+              Every initiative undertaken by InAmigos Foundation is designed to improve lives, strengthen communities, and create sustainable social impact.
+            </p>
+
+            <!-- Four Focus Areas — from CONTENT_SPEC -->
+            <div class="grid-2">
+
+              <!-- Focus Area 1: Education -->
+              <div class="impact-feature">
+                <div class="impact-feature__icon">
+                  <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="impact-feature__title">Education</h3>
+                  <p class="impact-feature__text">Supporting children through quality education and learning opportunities.</p>
+                </div>
+              </div>
+
+              <!-- Focus Area 2: Women Empowerment -->
+              <div class="impact-feature">
+                <div class="impact-feature__icon">
+                  <i class="fa-solid fa-hands-holding-child" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="impact-feature__title">Women Empowerment</h3>
+                  <p class="impact-feature__text">Helping women become financially independent through skills and awareness.</p>
+                </div>
+              </div>
+
+              <!-- Focus Area 3: Environmental Sustainability -->
+              <div class="impact-feature">
+                <div class="impact-feature__icon">
+                  <i class="fa-solid fa-tree" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="impact-feature__title">Environmental Sustainability</h3>
+                  <p class="impact-feature__text">Building greener communities through plantation drives and environmental campaigns.</p>
+                </div>
+              </div>
+
+              <!-- Focus Area 4: Community Welfare -->
+              <div class="impact-feature">
+                <div class="impact-feature__icon">
+                  <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="impact-feature__title">Community Welfare</h3>
+                  <p class="impact-feature__text">Supporting vulnerable communities through food distribution, social initiatives, and volunteer efforts.</p>
+                </div>
+              </div>
+
+            </div><!-- /grid-2 -->
+
+          </div><!-- /impact__content -->
+
+        </div><!-- /split -->
+      </div><!-- /container -->
+    </section>
+
+
+    <!-- =====================================================
+         COMPONENT: Gallery Section
+         =====================================================
+         Responsive grid of official photographs.
+         6–12 images from official InAmigos Foundation sources.
+         Hover zoom effect. Rounded corners. Equal spacing.
+         Categories: Food distribution, plantation drives,
+         education, internship, animal welfare, volunteer.
+         ===================================================== -->
+    <section id="gallery" class="section section--sage" aria-labelledby="gallery-heading">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header animate-fade-up">
+          <p class="section-label">Our Gallery</p>
+          <h2 id="gallery-heading" class="section-heading">Moments of Impact</h2>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+
+          <!-- Gallery Image 1 — wide span for visual variety -->
+          <figure class="gallery-item gallery-item--wide animate-fade-up">
+            <img 
+              src="images/gallery-1.jpg" 
+              alt="InAmigos Foundation volunteers during a community service event" 
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- Gallery Image 2 -->
+          <figure class="gallery-item animate-fade-up animate-delay-1">
+            <img 
+              src="images/gallery-2.jpg" 
+              alt="InAmigos Foundation team conducting an educational program for children" 
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- Gallery Image 3 -->
+          <figure class="gallery-item animate-fade-up animate-delay-2">
+            <img 
+              src="images/gallery-3.jpg" 
+              alt="Volunteers distributing food and essentials to underprivileged communities" 
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- Gallery Image 4 — wide span -->
+          <figure class="gallery-item gallery-item--wide animate-fade-up animate-delay-3">
+            <img 
+              src="images/gallery-4.jpg" 
+              alt="InAmigos Foundation plantation drive promoting environmental sustainability" 
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- Gallery Image 5 -->
+          <figure class="gallery-item animate-fade-up animate-delay-4">
+            <img 
+              src="images/gallery-5.jpg" 
+              alt="InAmigos Foundation World Water Day awareness campaign" 
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- Gallery Image 6 -->
+          <figure class="gallery-item animate-fade-up animate-delay-5">
+            <img 
+              src="images/gallery-6.jpg" 
+              alt="InAmigos Foundation International Day of Happiness celebration event" 
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- Gallery Image 7 -->
+          <figure class="gallery-item animate-fade-up animate-delay-5">
+            <img 
+              src="images/gallery-7.jpg" 
+              alt="InAmigos Foundation volunteer engaged in community support work" 
+              loading="lazy"
+            >
+          </figure>
+
+          <!-- Gallery Image 8 -->
+          <figure class="gallery-item animate-fade-up animate-delay-6">
+            <img 
+              src="images/gallery-8.jpg" 
+              alt="InAmigos Foundation volunteer participating in a social welfare program" 
+              loading="lazy"
+            >
+          </figure>
+
+        </div><!-- /gallery-grid -->
+
+      </div><!-- /container -->
+    </section>
+
+
+    <!-- =====================================================
+         COMPONENT: Volunteer CTA Section
+         =====================================================
+         Full-width green background. Centered white text.
+         Two buttons: Become a Volunteer + Donate Now.
+         Organic abstract shape decorations at low opacity.
+         Content from CONTENT_SPEC.md — Volunteer Section.
+         ===================================================== -->
+    <section id="volunteer" class="section section--green cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta__content animate-fade-up">
+
+          <!-- Section Label -->
+          <p class="section-label" style="color: rgba(255,255,255,0.7);">Get Involved</p>
+
+          <!-- Heading -->
+          <h2 id="cta-heading" class="cta__heading">Join Us in Making a Difference</h2>
+
+          <!-- Description — from CONTENT_SPEC -->
+          <p class="cta__text">
+            Whether you volunteer your time, contribute your skills, or support our initiatives, every action helps create lasting change in the lives of individuals and communities.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="btn-group btn-group--center">
+            <!-- TODO: Link to official InAmigos volunteer form once available -->
+            <a href="https://forms.gle/AB4c1hLaDDmtrKGU7" class="btn btn--white" target="_blank" rel="noopener noreferrer">
+              <i class="fa-regular fa-hand-holding-heart" aria-hidden="true"></i>
+              Become a Volunteer
+            </a>
+            <!-- TODO: Link to official InAmigos donation page once available -->
+            <a href="https://rzp.io/l/kWQ87HP" class="btn btn--accent" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-gift" aria-hidden="true"></i>
+              Donate Now
+            </a>
+          </div>
+
+        </div><!-- /cta__content -->
+      </div><!-- /container -->
+    </section>
+
+
+  </main><!-- /main-content -->
+
+
+  <!-- =====================================================
+       COMPONENT: Footer
+       =====================================================
+       Dark green background. White text.
+       Four columns: Logo + About, Quick Links, Contact, Social.
+       Copyright line at bottom.
+       Content from CONTENT_SPEC.md — Footer & Contact.
+       ===================================================== -->
+  <footer id="contact" class="footer" role="contentinfo">
+    <div class="container">
+
+      <!-- Footer Grid — 4 columns -->
+      <div class="footer__grid">
+
+        <!-- Column 1: Logo & Organization Info -->
+        <div>
+          <div class="footer__logo">
+            <img 
+              src="images/logo-footer.jpg" 
+              alt="InAmigos Foundation logo" 
+              class="footer__logo-img"
+              width="48"
+              height="48"
+            >
+            <div class="footer__logo-name">
+              InAmigos
+              <span>Foundation</span>
+            </div>
+          </div>
+          <p class="footer__text">
+            A Section 8 registered non-profit organization dedicated to creating meaningful social impact through education, women empowerment, environmental sustainability, youth development, community welfare, and animal care.
+          </p>
+
+          <!-- Social Media Icons -->
+          <div class="social-icons" aria-label="Follow us on social media">
+            <!-- Instagram — official account -->
+            <a href="https://www.instagram.com/inamigos/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow InAmigos Foundation on Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <!-- Facebook — official account -->
+            <a href="https://www.facebook.com/inamigos.inamigos" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow InAmigos Foundation on Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <!-- LinkedIn — TODO: Verify official LinkedIn URL from InAmigos Foundation -->
+            <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow InAmigos Foundation on LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <!-- YouTube — TODO: Verify official YouTube URL from InAmigos Foundation -->
+            <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow InAmigos Foundation on YouTube">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Navigation Links -->
+        <nav aria-label="Footer navigation">
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer__links">
+            <a href="#home" class="footer__link">Home</a>
+            <a href="#about" class="footer__link">About</a>
+            <a href="#projects" class="footer__link">Projects</a>
+            <a href="#impact" class="footer__link">Impact</a>
+            <a href="#gallery" class="footer__link">Gallery</a>
+            <a href="#volunteer" class="footer__link">Volunteer</a>
+          </div>
+        </nav>
+
+        <!-- Column 3: Contact Information — from CONTENT_SPEC -->
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:support@inamigosfoundation.org.in">support@inamigosfoundation.org.in</a>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:inamigosfoundation@gmail.com">inamigosfoundation@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:+916267309902">+91 6267309902</a>
+          </div>
+        </div>
+
+        <!-- Column 4: Address — from CONTENT_SPEC -->
+        <div>
+          <h3 class="footer__heading">Our Address</h3>
+          <address class="footer__contact-item" style="font-style: normal;">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>
+              Ward No. 5, Gram Post Sipat,<br>
+              Ujwal Nagar, Bilaspur,<br>
+              Chhattisgarh — 495555,<br>
+              India
+            </span>
+          </address>
+        </div>
+
+      </div><!-- /footer__grid -->
+
+      <!-- Copyright — from CONTENT_SPEC -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 InAmigos Foundation. Awareness webpage created for internship purposes.
+        </p>
+      </div>
+
+    </div><!-- /container -->
+  </footer>
+
+</body>
+</html>
